@@ -5,17 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>战栗的鬼</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="战栗的鬼">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="战栗的鬼">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="战栗的鬼">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="战栗的鬼" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -34,7 +34,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">战栗的鬼</a>
       </h1>
       
     </div>
@@ -62,6 +62,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-java中对象初始化的一些你可能不关注的东西“" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/11/java中对象初始化的一些你可能不关注的东西“/" class="article-date">
+  <time datetime="2019-10-11T03:02:29.000Z" itemprop="datePublished">2019-10-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/11/java中对象初始化的一些你可能不关注的东西“/">java中对象初始化的一些你可能不关注的东西“</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-区分Java中类的加载和生成对象"><a href="#1-区分Java中类的加载和生成对象" class="headerlink" title="1.区分Java中类的加载和生成对象"></a>1.区分Java中类的加载和生成对象</h2><p>​    众所周知，类的加载和new一个对象是两回事。类的加载发生在我们第一次使用这个类，无论他是否生成对象。例如，Math类就是Java中典型的不允许生成对象的类之一，只允许使用其中的静态成员。
+        
+          <p class="article-more-link">
+            <a href="/2019/10/11/java中对象初始化的一些你可能不关注的东西“/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/11/java中对象初始化的一些你可能不关注的东西“/" data-id="ck1lqw8kj00032cv9fm6vqepj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-子类重写父类方法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/30/子类重写父类方法/" class="article-date">
@@ -86,25 +127,16 @@
       
         <h1 id="子类重写父类方法"><a href="#子类重写父类方法" class="headerlink" title="子类重写父类方法"></a>子类重写父类方法</h1><p>​        在Java语言中，我们知道，子类会自动继承父类中的公共方法，但有时在子类中需要对继承的方法进行一些修改，即对父类中的方法进行重写。</p>
 <p>​        子类重写父类方法需要和父类被重写的方法具有相同的方法名、参数列表以及返回值类型。值得注意的是，子类重写父类方法时，如果需要的改变父类方法的访问权限，则只能向访问权限更大的方向改变，不能将方法的访问权限缩得更小；而且如果父类方法的权限修饰符为private(私有的)，则不能被子类重写。下面，咱们就用代码来测试一下。</p>
-<p>​        </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">public class lianxi6_1 &#123;</span><br><span class="line"></span><br><span class="line">	public lianxi6_1() &#123;</span><br><span class="line">		// TODO Auto-generated constructor stub</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">		ful fu = new ful();</span><br><span class="line">		fu.lklk();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">class fu&#123;</span><br><span class="line">	private void lk() &#123;</span><br><span class="line">		System.out.println(&quot;父类&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	public void lklk() &#123;</span><br><span class="line">		lk();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">class ful extends fu&#123;</span><br><span class="line">	 public void lk() &#123;</span><br><span class="line">		System.out.println(&quot;子类&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​        在上面代码中ful类继承fu类，并且尝试重写fu类中lk（）方法，但是因为fu类中lk（）方法权限修饰符为pritave(私有的)，所以我们可以大胆猜测ful类中重写fu类中lk()方法一定是失败的，但是这个时候系统是不会报错的，也就是说，我们确确实实在ful类中定义了一个lk()方法。然后，我们在主方法里实例化一个对象（第9行），并让对象调用lklk()方法，观察其结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">父类</span><br></pre></td></tr></table></figure>
-
-<p>​        系统最终打印出结果为“父类”，这也进一步说明我们上边猜测的正确性，ful类确实没有能够重写lk（）方法，也确实证明了由private(私有的)修饰的方法不能被子类重写。</p>
-<p>​        为了做出对比，我们修改上边的代码，将fu类中的lk（）方法的权限修饰符改为protected（保护）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">public class lianxi6_1 &#123;</span><br><span class="line"></span><br><span class="line">	public lianxi6_1() &#123;</span><br><span class="line">		// TODO Auto-generated constructor stub</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">		ful fu = new ful();</span><br><span class="line">		fu.lklk();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">class fu&#123;</span><br><span class="line">	protected void lk() &#123;</span><br><span class="line">		System.out.println(&quot;父类&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	public void lklk() &#123;</span><br><span class="line">		lk();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">class ful extends fu&#123;</span><br><span class="line">	 public void lk() &#123;</span><br><span class="line">		System.out.println(&quot;子类&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>代码执行结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">子类</span><br></pre></td></tr></table></figure>
-
-<p>​        这一次系统打印出了“子类”，执行了子类的方法lk（），但是整个代码我们只修改了父类方法的权限修饰符，并没有改过主方法或其他地方，可以确定这次子类重写父类方法确实是成功了。</p>
-
+<p>​
+        
+          <p class="article-more-link">
+            <a href="/2019/09/30/子类重写父类方法/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/30/子类重写父类方法/" data-id="ck168dl5f00009ov94se2curb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/30/子类重写父类方法/" data-id="ck1lqw8kh00022cv90sveu4of" class="article-share-link">Share</a>
       
       
     </footer>
@@ -137,11 +169,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>如果成功，表示我的操作没毛病，博客文章成功！</p>
-
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/28/我的第一篇博客文章/" data-id="ck168dl5q00029ov9yd3rkjjg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/28/我的第一篇博客文章/" data-id="ck1lqw8jy00012cv9fypgu9wi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -190,7 +222,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/28/hello-world/" data-id="ck168dl5n00019ov9p0eppsdc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/28/hello-world/" data-id="ck1lqw8js00002cv9k8nr7agh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -218,7 +250,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
     </div>
   </div>
 
@@ -229,6 +261,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/10/11/java中对象初始化的一些你可能不关注的东西“/">java中对象初始化的一些你可能不关注的东西“</a>
+          </li>
         
           <li>
             <a href="/2019/09/30/子类重写父类方法/">子类重写父类方法</a>
