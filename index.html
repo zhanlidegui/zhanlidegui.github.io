@@ -62,6 +62,241 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-html嵌入视频" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/13/html嵌入视频/" class="article-date">
+  <time datetime="2020-01-13T13:13:09.000Z" itemprop="datePublished">2020-01-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/13/html嵌入视频/">html嵌入视频</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-嵌入视频"><a href="#1-嵌入视频" class="headerlink" title="1.嵌入视频"></a>1.嵌入视频</h1><h2 id="1-video元素"><a href="#1-video元素" class="headerlink" title="1.video元素"></a>1.video元素</h2><h3 id="1-代码格式"><a href="#1-代码格式" class="headerlink" title="1.代码格式"></a>1.代码格式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;video&gt;</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-video元素属性"><a href="#2-video元素属性" class="headerlink" title="2.video元素属性"></a>2.video元素属性</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>src</td>
+<td>视频地址</td>
+</tr>
+<tr>
+<td>width</td>
+<td>设置视频所占宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>设置视频所占长度</td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>网页完成后自动播放视频</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>预先载入视频</td>
+</tr>
+<tr>
+<td>controls</td>
+<td>声明该属性，浏览器添加播放控件</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>视频循环播放</td>
+</tr>
+<tr>
+<td>poster</td>
+<td>视频载入时显示图片</td>
+</tr>
+<tr>
+<td>muted</td>
+<td>视频静音</td>
+</tr>
+</tbody></table>
+<h4 id="preload属性："><a href="#preload属性：" class="headerlink" title="preload属性："></a>preload属性：</h4><table>
+<thead>
+<tr>
+<th>值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>不会自动载入</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>载入第一帧</td>
+</tr>
+<tr>
+<td>auto</td>
+<td>全部自动载入（不声明则默认为auto）</td>
+</tr>
+</tbody></table>
+<h2 id="2-浏览器支持的视频格式"><a href="#2-浏览器支持的视频格式" class="headerlink" title="2.浏览器支持的视频格式"></a>2.浏览器支持的视频格式</h2><table>
+<thead>
+<tr>
+<th>格式</th>
+<th>ie</th>
+<th>Firefox</th>
+<th>chrome</th>
+<th>Opera</th>
+<th>Safari</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ogv（ogg）</td>
+<td>不支持</td>
+<td>3.5以上支持</td>
+<td>5.0以上</td>
+<td>10.5</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>MP4</td>
+<td>9.0以上支持</td>
+<td>不支持</td>
+<td>5.0</td>
+<td>不支持</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>webm</td>
+<td>不支持</td>
+<td>4.0以上支持</td>
+<td>6.0</td>
+<td>10.6</td>
+<td>不支持</td>
+</tr>
+</tbody></table>
+<p>ogg=带有theora视频编码和vorbis音频编码的ogg文件</p>
+<p>MP4=带有H.264视频编码和aac音频编码的MPEG4文件</p>
+<p>webM带有vp8视频编码和vorbis音频编码的webM文件</p>
+<p>总结：1.没有任何一个格式可以支持所有浏览器；</p>
+<p>​            2.最简单的方法，需要MP4与ogv两种影音格式；</p>
+<p>​            3.现在更新即时可以支持了，但以前旧版本不支持，所以还需要添加。</p>
+<p>所以，我们需要分类讨论，不同浏览器要用不同格式。</p>
+<h2 id="3-设置视频格式"><a href="#3-设置视频格式" class="headerlink" title="3.设置视频格式"></a>3.设置视频格式</h2><p>在video元素中间插入元素source</p>
+<h3 id="1-source元素"><a href="#1-source元素" class="headerlink" title="1.source元素"></a>1.source元素</h3><p>source元素包含两种属性src和type。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>src</td>
+<td>视频地址</td>
+</tr>
+<tr>
+<td>type</td>
+<td>规定视频格式</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;source src=&quot;My Sequence.mp4&quot; type=&quot;video/mp4&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>代码格式如上。</p>
+<h1 id="2-嵌入音频"><a href="#2-嵌入音频" class="headerlink" title="2.嵌入音频"></a>2.嵌入音频</h1><h2 id="1-audio元素"><a href="#1-audio元素" class="headerlink" title="1.audio元素"></a>1.audio元素</h2><h3 id="1-代码格式："><a href="#1-代码格式：" class="headerlink" title="1.代码格式："></a>1.代码格式：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio&gt;&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-audio元素属性"><a href="#2-audio元素属性" class="headerlink" title="2.audio元素属性"></a>2.audio元素属性</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>autoplay</td>
+<td>自动播放音频</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>循环播放</td>
+</tr>
+<tr>
+<td>controls</td>
+<td>向用户显示控件</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>预先载入音频</td>
+</tr>
+<tr>
+<td>src</td>
+<td>播放音频的url</td>
+</tr>
+</tbody></table>
+<h2 id="2-audio支持的浏览器音频格式"><a href="#2-audio支持的浏览器音频格式" class="headerlink" title="2.audio支持的浏览器音频格式"></a>2.audio支持的浏览器音频格式</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>ie9</th>
+<th>Firefox3.5</th>
+<th>opera</th>
+<th>chrome</th>
+<th>Safari</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ogg vorbis</td>
+<td></td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+<td></td>
+</tr>
+<tr>
+<td>mp3</td>
+<td>支持</td>
+<td></td>
+<td></td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>wav</td>
+<td></td>
+<td>支持</td>
+<td>支持</td>
+<td></td>
+<td>支持</td>
+</tr>
+</tbody></table>
+<h2 id="3-设置音频格式"><a href="#3-设置音频格式" class="headerlink" title="3.设置音频格式"></a>3.设置音频格式</h2><p>在audio元素里设置source元素支持所以浏览器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio&gt;</span><br><span class="line">	&lt;source src=&quot;音频地址&quot;  type=&quot;audio/音频格式&quot;&gt;</span><br><span class="line">&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/01/13/html嵌入视频/" data-id="ck5cl2bv30001rwv95h10k6pp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-html嵌入图片" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/01/13/html嵌入图片/" class="article-date">
@@ -129,7 +364,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/13/html嵌入图片/" data-id="ck5cgpeaz00009kv9xvz2aqph" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/13/html嵌入图片/" data-id="ck5cl2bvd0007rwv9g4tpfi53" class="article-share-link">Share</a>
       
       
     </footer>
@@ -171,7 +406,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/12/html表单/" data-id="ck5cgms7b00034sv91pgjtb62" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/12/html表单/" data-id="ck5cl2bv70003rwv9c8n3x8z3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -212,7 +447,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/12/HTML列表元素/" data-id="ck5cgms6p00004sv9ljdoh8o5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/12/HTML列表元素/" data-id="ck5cl2buv0000rwv9u0a2ins6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -253,7 +488,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/12/html5学习1：基础篇/" data-id="ck5cgms7900024sv9yagg89hc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/12/html5学习1：基础篇/" data-id="ck5cl2bva0005rwv9ayijixmq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -294,7 +529,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/11/java中对象初始化的一些你可能不关注的东西“/" data-id="ck5cgms8600064sv94es99oz2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/11/java中对象初始化的一些你可能不关注的东西“/" data-id="ck5cl2bvp0008rwv9jl6sl2c9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -337,7 +572,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/30/子类重写父类方法/" data-id="ck5cgms7s00054sv97m0q77b8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/30/子类重写父类方法/" data-id="ck5cl2bvc0006rwv97pk6wghx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -374,7 +609,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/28/我的第一篇博客文章/" data-id="ck5cgms7q00044sv9qcqmryir" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/28/我的第一篇博客文章/" data-id="ck5cl2bv90004rwv9ib4n7o62" class="article-share-link">Share</a>
       
       
     </footer>
@@ -423,7 +658,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/28/hello-world/" data-id="ck5cgms7600014sv9oace8irm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/28/hello-world/" data-id="ck5cl2bv50002rwv98wstf65n" class="article-share-link">Share</a>
       
       
     </footer>
@@ -464,6 +699,10 @@
       <ul>
         
           <li>
+            <a href="/2020/01/13/html嵌入视频/">html嵌入视频</a>
+          </li>
+        
+          <li>
             <a href="/2020/01/13/html嵌入图片/">html嵌入图片</a>
           </li>
         
@@ -477,10 +716,6 @@
         
           <li>
             <a href="/2020/01/12/html5学习1：基础篇/">html5学习1：基础篇</a>
-          </li>
-        
-          <li>
-            <a href="/2019/10/11/java中对象初始化的一些你可能不关注的东西“/">java中对象初始化的一些你可能不关注的东西“</a>
           </li>
         
       </ul>
