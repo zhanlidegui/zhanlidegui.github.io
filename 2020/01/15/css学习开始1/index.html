@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="战栗的鬼">
 <meta property="og:description" content="1.CSS创建1.元素内嵌样式表代码： 1&amp;lt;a style=&amp;quot;font-size:40px;color:#ffad2a&amp;quot;&amp;gt;zhanlidegui&amp;lt;/a&amp;gt;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-15T17:27:44.340Z">
+<meta property="og:updated_time" content="2020-01-17T14:20:06.790Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css学习开始1">
 <meta name="twitter:description" content="1.CSS创建1.元素内嵌样式表代码： 1&amp;lt;a style=&amp;quot;font-size:40px;color:#ffad2a&amp;quot;&amp;gt;zhanlidegui&amp;lt;/a&amp;gt;">
@@ -206,11 +206,79 @@
 <td>设置背景图像的尺寸</td>
 </tr>
 </tbody></table>
+<h1 id="4-设置文本样式"><a href="#4-设置文本样式" class="headerlink" title="4.设置文本样式"></a>4.设置文本样式</h1><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>text-align</td>
+<td>对齐文本</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>文本方向</td>
+</tr>
+<tr>
+<td>letter-spacing</td>
+<td>指定字母间距</td>
+</tr>
+<tr>
+<td>word-spacing</td>
+<td>指定单词间距</td>
+</tr>
+<tr>
+<td>line-height</td>
+<td>指定行高（行间距）</td>
+</tr>
+<tr>
+<td>text-indent</td>
+<td>首行缩进</td>
+</tr>
+<tr>
+<td>text-decoration</td>
+<td>设置文本装饰（underline:下划线,overline上划线,</td>
+</tr>
+<tr>
+<td>text-transform</td>
+<td>设置文本大小写转换</td>
+</tr>
+<tr>
+<td>font-family</td>
+<td>设置字体</td>
+</tr>
+<tr>
+<td>font-size</td>
+<td>设置字体大小</td>
+</tr>
+<tr>
+<td>font-style</td>
+<td>设置字体样式</td>
+</tr>
+<tr>
+<td>font-variant</td>
+<td>设置字母小型大小写</td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td>设置字体粗细</td>
+</tr>
+<tr>
+<td>text-shadow</td>
+<td>设置文本阴影</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;css对齐方式&lt;/title&gt;</span><br><span class="line">        &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">        .c1&#123;</span><br><span class="line">            /* 对齐方式 */</span><br><span class="line">            text-align:center;</span><br><span class="line">            direction: rtl;</span><br><span class="line">            /* 字间距 */</span><br><span class="line">            letter-spacing: 20px;</span><br><span class="line">            /* 单词间距 */</span><br><span class="line">            word-spacing: 20px;</span><br><span class="line">            /* 行高 */</span><br><span class="line">            line-height: 100px;</span><br><span class="line">            /* 文本装饰  underline下划线，overline上划线*/</span><br><span class="line">            text-decoration:line-through;</span><br><span class="line">            /* 大小写转换 capitalize首字母大写，uppercase全部转换成大写，lowercase全小写*/</span><br><span class="line">            text-transform: capitalize;</span><br><span class="line">        &#125;</span><br><span class="line">        .c2&#123;</span><br><span class="line">            /* 首行缩进 */</span><br><span class="line">            text-indent: 20px;</span><br><span class="line">        &#125;</span><br><span class="line">        &lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;p class=&quot;c1&quot;&gt;plplpl&lt;/p&gt;</span><br><span class="line">        &lt;p class=&quot;c1&quot;&gt;lklk&lt;/p&gt;</span><br><span class="line">        &lt;!-- 首行缩进 --&gt;</span><br><span class="line">        &lt;p class=&quot;c2&quot;&gt;lalalalal&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;lklk&lt;/p&gt;</span><br><span class="line">        &lt;p class=&quot;c1&quot;&gt;lqi&lt;/p&gt;</span><br><span class="line">        &lt;a href=&quot;65578040_p0.jpg&quot; &gt;&lt;/a&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;文本样式2&lt;/title&gt;</span><br><span class="line">        &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">            .c1&#123;</span><br><span class="line">                 /* 设置字体 */</span><br><span class="line">                font-family:&apos;Gill Sans&apos;, &apos;Gill Sans MT&apos;, Calibri, &apos;Trebuchet MS&apos;, sans-serif;</span><br><span class="line">                /* 字体大小 */</span><br><span class="line">                font-size: 20px;</span><br><span class="line">                /* 字体样式 italic斜体，oblique倾斜字*/</span><br><span class="line">                font-style:italic;</span><br><span class="line">                /* 设置小的大写 */</span><br><span class="line">                font-variant: small-caps;</span><br><span class="line">                /* 设置字体粗细 */</span><br><span class="line">                font-weight: 900;</span><br><span class="line">                /* 设置字体阴影  数值依次为水平距离，竖直距离，模糊程度，颜色 */</span><br><span class="line">                text-shadow: 1px 1px 10px red;</span><br><span class="line">            &#125;</span><br><span class="line">            .c2&#123;</span><br><span class="line">                text-transform:uppercase;</span><br><span class="line">            &#125;</span><br><span class="line">        &lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;p class=&quot;c1&quot;&gt;lklklkkl战栗的鬼&lt;/p&gt;</span><br><span class="line">        &lt;p class=&quot;c2&quot;&gt;lklklkkl战栗的鬼&lt;/p&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-使用过渡"><a href="#5-使用过渡" class="headerlink" title="5.使用过渡"></a>5.使用过渡</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/15/css学习开始1/" data-id="ck5fkwtqj0000pkv9bxhkncm9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/01/15/css学习开始1/" data-id="ck82m4cf90008pgv9al461jnj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -218,6 +286,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2020/03/22/2的幂leetcode/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          2的幂leetcode
+        
+      </div>
+    </a>
   
   
     <a href="/2020/01/13/html嵌入视频/" id="article-nav-older" class="article-nav-link-wrap">
@@ -246,7 +323,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
     </div>
   </div>
 
@@ -257,6 +334,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/03/22/2的幂leetcode/">2的幂leetcode</a>
+          </li>
         
           <li>
             <a href="/2020/01/15/css学习开始1/">css学习开始1</a>
@@ -272,10 +353,6 @@
         
           <li>
             <a href="/2020/01/12/html表单/">html表单</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/12/HTML列表元素/">HTML列表元素</a>
           </li>
         
       </ul>
